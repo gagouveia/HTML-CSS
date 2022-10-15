@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores personalizados 
+        
+        # = id
+        . = class
+        :: = pseudo element
+        > = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(19, 19, 19);
+            color: rgb(0, 255, 136);
+            padding: 30px;
+        }
+        a {
+            color: rgb(0, 255, 136);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(0, 148, 111);
+        }
+        a:hover {
+            color: blueviolet;
+            text-decoration: underline;
+        }
+        a:active {
+            color: blue;
+        }
+        .especial::before {
+            content: ✗;
+        }
+        .especial::after {
+            content: '✔';
+            
+        }
+        .especial {
+            background-color: rgba(219, 219, 219, 0.397)
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://youtube.com/mercedesamgf1" target="_blank">Canal youtube</a></li>
+        <li><a href="https://www.mercedesamgf1.com/en/" class="especial" target="_blank">Site</a></li>
+        <li><a href="https://twitter.com/mercedesamgf1" target="_blank">Twitter</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes <br>ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture> <!--Sempre organizar por tamanho de imagem. Imagem pequena primeiro, media no meio e grande por ultimo-->
+        <source media="(max-width: 750px)" srcset="imagens/tamanho-pequeno.png">
+       <source media="(max-width: 1050px)" srcset="imagens/tamanho-medio.png">
+        <img src="imagens/tamanho-grande.png" alt="imagem flexível">
+    </picture>
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midia/Justin Timberlake - Summer Love.mp3" type="audio/mpeg">
+
+    </audio>
+    <p>Justin Timberlake - Summer Love</p>
+
+    <audio src="midia/Harry Styles - Daydreaming.mp3"  autoplay controls loop></audio>
+    <p>Harry Styles - Daydreaming</p>
+
+
+</body>
+</html>
